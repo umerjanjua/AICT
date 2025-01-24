@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deals Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="./logo.png" type="image/png">
+</head>
+<body>
+  <!-- Header Section -->
+<header class="bg-warning text-center p-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#"><img src="logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deals.html">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+</header>
+
+  <!-- Top Deals Section -->
+  <section class="bg-warning text-center py-5">
+    <div class="container">
+      <h1 class="text-white mb-4">Top Deals</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="dinner.avif" class="card-img-top" alt="Happy Hour Munchies">
+            <div class="card-body text-center">
+              <h5 class="card-title">Family platter</h5>
+              <p class="card-text">Rs 7000</p>
+              <a href="#" class="btn btn-danger">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="bgd.jpg" class="card-img-top" alt="EID Special Offer">
+            <div class="card-body text-center">
+              <h5 class="card-title">Trio</h5>
+              <p class="card-text">Rs 2800</p>
+              <a href="#" class="btn btn-danger">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="fc.avif" class="card-img-top" alt="Our Special Drinks">
+            <div class="card-body text-center">
+              <h5 class="card-title">Amazing Deal</h5>
+              <p class="card-text">Rs 2000</p>
+              <a href="#" class="btn btn-danger">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Deals Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Make Custom Deal</h2>
+    <form>
+      <div class="accordion" id="customDealAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingBurgers">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBurgers">
+              Burgers
+            </button>
+          </h2>
+          <div id="collapseBurgers" class="accordion-collapse collapse" data-bs-parent="#customDealAccordion">
+            <div class="accordion-body">Select from a variety of burgers!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingPizza">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePizza">
+              Pizza
+            </button>
+          </h2>
+          <div id="collapsePizza" class="accordion-collapse collapse" data-bs-parent="#customDealAccordion">
+            <div class="accordion-body">Add your favorite pizzas to the deal!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingDeserts">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDeserts">
+              Deserts
+            </button>
+          </h2>
+          <div id="collapseDeserts" class="accordion-collapse collapse" data-bs-parent="#customDealAccordion">
+            <div class="accordion-body">Don't forget the sweet treats!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeafood">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeafood">
+              Seafood
+            </button>
+          </h2>
+          <div id="collapseSeafood" class="accordion-collapse collapse" data-bs-parent="#customDealAccordion">
+            <div class="accordion-body">Choose from our seafood delights!</div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Your Deal Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Your Deal</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Double Patty Beef Burger
+            <input type="number" min="0" class="form-control w-25 text-center">
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Pepperoni Pizza
+            <input type="number" min="0" class="form-control w-25 text-center">
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Special BBQ Pizza
+            <input type="number" min="0" class="form-control w-25 text-center">
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="border p-3">
+          <h4>Your Deal Summary</h4>
+          <p>Total: <strong>$82.96</strong></p>
+          <button class="btn btn-danger w-100">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Andaaz-e-Pakwaan. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
